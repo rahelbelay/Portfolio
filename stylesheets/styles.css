@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.inner {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner > img {
+    width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.sidebar {
+    padding: 2em;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    background-image: url(../Images/d89ec390495107.5e189eb911f34.jpeg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+h4 {
+    padding:20px;
+}
+a {
+    color: #d6d6d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(30, 118, 165);    
+}
+
+.sidebar, h1{
+    color: #d6d6d6;
+}
+.header-container > h2 {
+    color: #d6d6d6;
+}
+.one {
+    padding: 2em;
+}
+
+.two {
+    padding: 2em;
+}
+
+.main-container {
+    color: #464646;
+    overflow: scroll;
+}
+
+
+.project {
+    display: flex;
+}
+
+.card {
+    width: 330px; 
+    margin: 20px;
+    border-radius: 5px;   
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover .btn-container {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.1s, opacity 0.1s linear;
+}
+
+.card-img > img {
+    max-width: 330px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 4px rgba(87, 85, 85, 0.207);
+}
+
+.card .btn {
+    background-color: #555;
+    color: white;
+    width: 100%;
+    font-size: 13px;
+    padding: 0.5em;
+    margin: 0 0.25em;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card .btn:hover  {
+    border-color: white;
+}
+
+.btn-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.1s, opacity 0.1s linear;
+}
+
+.actions, .icon,  .copyright {
+    list-style: none;
+}
+
+ .copyright {
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+
+h2{
+    color :#464646;
+    font-size: 316x;
+}
+
+p{
+    color: #797979;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 1.3;
+}
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons {
+    padding: .5em;
+}
+
+.mobile-footer {
+    display: none;
+}
+
+.desktop-footer {
+    display:block;
+}
+
+@media screen and (max-width: 700px){
+    .main-container {
+        overflow: unset;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        width: 100%
+    }
+
+    .desktop-footer{
+        display: none;
+    }
+    .mobile-footer {
+        display: block;
+        background-image: url(../Images/d89ec390495107.5e189eb911f34.jpeg);
+        width: 100%; 
+        position: relative;  
+        padding: 1em;
+    }     
+}
+
+.contact-icons {
+    position: relative;
+    display: inline-block; 
+    color: #bbbbbb
+  }
+
+  .contact-icons:hover {
+    color: white;
+  }
+
+.contact-icons .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 50%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.contact-icons .tooltiptext::after{
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+  
+.contact-icons:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
+
+.skillsList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.icon {
+    display: flex;
+    margin: 20px;  
+    min-width: 120px;    
+    align-items: center;  
+}
+ 

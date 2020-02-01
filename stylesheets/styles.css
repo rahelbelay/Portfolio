@@ -35,8 +35,7 @@ body, html {
     background-image: url(../Images/d89ec390495107.5e189eb911f34.jpeg);
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-   
+    justify-content: space-between;  
 }
 
 h4 {
